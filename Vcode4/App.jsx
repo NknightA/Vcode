@@ -1,9 +1,10 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+
+import { ReactDOM } from 'react-dom';
 import { BrowserRouter , Link, Route , Switch } from 'react-router-dom';
+import { Home } from './src/Home';
 import { Page1 } from './src/Page1';
 
-function App () {
+ export const App = () => {
   return (
     <BrowserRouter>
       <div className='App'>
@@ -15,14 +16,14 @@ function App () {
       <br />
 
       <Switch>
-      <Route exact path='/'>
-        <Home />
-      </Route>
-
+       <Route exact path='/'>
+         <Home />
+       </Route>
       
-      <Route path='/page1'>
-        <Page1 />
-      </Route>
+       <Route exact path='/page1'>
+         <Page1 />
+       </Route>
+      
       </Switch>
       </div>
 
