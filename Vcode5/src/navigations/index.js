@@ -4,6 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { Button, StyleSheet } from 'react-native';
 import HomeScreen from '../screens/HomeScreen';
 import DetailScreen from '../screens/DetailScreen';
+import { StyleSheet } from 'react-native-web';
 import { checkPluginState } from 'react-native-reanimated/lib/reanimated2/core';
 import { StatusBar } from 'expo-status-bar';
 
