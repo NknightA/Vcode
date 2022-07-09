@@ -1,13 +1,15 @@
-import React from 'react';
+import React , { Component }from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
 import { Button, StyleSheet } from 'react-native';
 import HomeScreen from '../screens/HomeScreen';
 import DetailScreen from '../screens/DetailScreen';
+import { checkPluginState } from 'react-native-reanimated/lib/reanimated2/core';
+import { StatusBar } from 'expo-status-bar';
+
 
 
 const RootStack = createStackNavigator();
-
 
 const RootStackScreeen = () => {
   return (

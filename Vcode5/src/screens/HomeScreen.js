@@ -1,6 +1,5 @@
 import React from 'react';
-import {StyleSheet, View, Text, Button, TouchableOpacity} from 'react-native';
-import DetailScreen from './DetailScreen';
+import {StyleSheet, View, Text, TouchableOpacity} from 'react-native';
 
 //prottype positioning
 //Accunt Button
@@ -24,9 +23,13 @@ const HomeScreen = ({navigation}) => {
             
             
             <View style={styles.Button2}>
-            <TouchableOpacity style={styles.ButtonText3}>
-              <Text>aaa</Text>
-            </TouchableOpacity>        
+            <TouchableOpacity style={styles.ButtonText3}
+                               onPress={this.onPress}
+                              >
+
+              <Text>sss</Text>
+            </TouchableOpacity>
+               
             </View>   
 
             <View style={styles.Button2}>
