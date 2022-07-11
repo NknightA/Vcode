@@ -1,6 +1,5 @@
 import React from 'react';
 import {StyleSheet, View, Text, TouchableOpacity , ScrollView} from 'react-native';
-import { StyleSheet } from './';
 //prottype positioning
 //Accunt Button
 
@@ -10,9 +9,11 @@ const HomeScreen = ({navigation}) => {
   <ScrollView style={styles.container}>
     <View style={styles.container2}>
       <Text style={styles.text_title}>V</Text>
+      <Text style={styles.text_title}>My dev</Text>
         <View style={styles.Accunt_aera}>
-           <TouchableOpacity style={styles.AccountIconButton}>
-             <Text>aaa</Text>
+           <TouchableOpacity style={styles.AccountIconButton}
+                              onPress = {() => {navigation.navigate('Detail');}}>
+             <Text>Accunt</Text>
            </TouchableOpacity>
 
            <Text style={styles.text_text}>aaaa</Text>
@@ -49,26 +50,41 @@ const HomeScreen = ({navigation}) => {
     <View style={styles.container2}>
       <View style={styles.Button_aera}>
         <View style={styles.inner_container3}>
-          <TouchableOpacity style={styles.MenuButton1}>
-              <Text>aaa</Text>
+          <TouchableOpacity style={styles.MenuButton2}>
+              <Text style={styles.text_button}>aaa</Text>
             </TouchableOpacity>
 
-            <TouchableOpacity style={styles.MenuButton1}>
-              <Text>aaa</Text>
+            <TouchableOpacity style={styles.MenuButton2}>
+            <Text style={styles.text_button}>aaa</Text>
+            </TouchableOpacity>
+
+            <TouchableOpacity style={styles.MenuButton2}>
+              <Text style={styles.text_button}>aaa</Text>
+            </TouchableOpacity>
+
+            <TouchableOpacity style={styles.MenuButton2}>
+              <Text style={styles.text_button}>aaa</Text>
+            </TouchableOpacity>
+          </View>
+
+          <View style={styles.inner_container4}>
+            <TouchableOpacity style={styles.MenuButton2}>
+              <Text style={styles.text_button}>aaa</Text>
+            </TouchableOpacity>
+
+            <TouchableOpacity style={styles.MenuButton2}>
+              <Text style={styles.text_button}>aaa</Text>
+            </TouchableOpacity>
+
+            <TouchableOpacity style={styles.MenuButton2}>
+              <Text style={styles.text_button}>aaa</Text>
+            </TouchableOpacity>
+
+            <TouchableOpacity style={styles.MenuButton2}>
+              <Text style={styles.text_button}>aaa</Text>
             </TouchableOpacity>
           </View>
       </View>
-
-      <View style={styles.inner_container3}>
-          <TouchableOpacity style={styles.MenuButton1}>
-              <Text>aaa</Text>
-            </TouchableOpacity>
-
-            <TouchableOpacity style={styles.MenuButton1}>
-              <Text>aaa</Text>
-            </TouchableOpacity>
-            <Text stylele={this.test}></Text>
-          </View>
     </View>
   </ScrollView>
   );
@@ -77,11 +93,11 @@ const HomeScreen = ({navigation}) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'black',
+    backgroundColor: 'white',
   },
 
   text_title : {
-    color: 'white',
+    color: '#000',
     fontSize : 50,
   },
 
@@ -91,7 +107,7 @@ const styles = StyleSheet.create({
   },
 
   container2: {
-    backgroundColor: 'gray',
+    backgroundColor: '#FFF',
     marginTop: 30,
     alignItems : 'center'
   },
@@ -99,7 +115,7 @@ const styles = StyleSheet.create({
   inner_container1 : {
     width : '90%',
     height : 50 ,
-    backgroundColor : 'green',
+    backgroundColor : '#FFF',
     flexDirection: 'row',
     justifyContent: 'center',
   },
@@ -107,7 +123,7 @@ const styles = StyleSheet.create({
   inner_container2 : {
     width : '90%',
     height : 50 ,
-    backgroundColor : 'green',
+    backgroundColor : '#FFF',
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
@@ -117,7 +133,18 @@ const styles = StyleSheet.create({
     marginTop: 20,
     width : '90%',
     height : 50 ,
-    backgroundColor : 'green',
+    backgroundColor : '#FFF',
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: 10
+  },
+
+  inner_container4 : {
+    marginTop: 40,
+    width : '90%',
+    height : 50 ,
+    backgroundColor : '#FFF',
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
@@ -136,7 +163,7 @@ const styles = StyleSheet.create({
     marginTop: 10 ,
     width : '90%',
     height: 280,
-    backgroundColor: 'skyblue' ,
+    backgroundColor: 'white' ,
     alignItems: 'center'
   },
 
@@ -173,12 +200,29 @@ const styles = StyleSheet.create({
     marginLeft : 20,
     marginRight : 20,
   },
+  
+  MenuButton2: {
+    backgroundColor: '#FFFF00',
+    justifyContent: 'center',
+    alignItems: 'center',
+    width: 70,
+    height: 70,
+    elevation: 2,
+    position: 'relative',
+    borderRadius:5,
+    marginLeft : 10,
+    marginRight : 10,
+  },
+
+  text_button : {
+    color: 'black'
+  },
 
     Button_aera: {
     marginTop: 20 ,
     width : '90%',
     height: 180,
-    backgroundColor: 'skyblue' ,
+    backgroundColor: '#FFF' ,
     alignItems: 'center',
     
   },
