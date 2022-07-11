@@ -12,7 +12,7 @@ const HomeScreen = ({navigation}) => {
       <Text style={styles.text_title}>My dev</Text>
         <View style={styles.Accunt_aera}>
            <TouchableOpacity style={styles.AccountIconButton}
-                              onPress = {() => {navigation.navigate('Detail');}}>
+                              onPress = {() => {navigation.navigate('Account');}}>
              <Text>Accunt</Text>
            </TouchableOpacity>
 
