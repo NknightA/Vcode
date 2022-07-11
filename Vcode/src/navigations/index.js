@@ -5,6 +5,7 @@ import { Button, StyleSheet } from 'react-native';
 import HomeScreen from '../screens/HomeScreen';
 import DetailScreen from '../screens/DetailScreen';
 import Account from '../screens/account';
+import Git from '../screens/sub/git';
 
 
 
@@ -18,6 +19,7 @@ const RootStackScreeen = () => {
       <RootStack.Screen name='Home' component={HomeScreen} />
       <RootStack.Screen name='Detail' component={DetailScreen} />
       <RootStack.Screen name='Account' component={Account} />
+      <RootStack.Screen name='Git' component={Git}/>
       </RootStack.Navigator>
     </NavigationContainer>
   )
