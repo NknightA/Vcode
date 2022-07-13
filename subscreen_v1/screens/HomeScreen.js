@@ -34,6 +34,7 @@ const HomeScreen = ({navigation}) => {
            <View style={styles.inner_container2}>
            <TouchableOpacity style={styles.MenuButton1}>
               <Text>aaa</Text>
+
             </TouchableOpacity>
 
             <TouchableOpacity style={styles.MenuButton1}>
